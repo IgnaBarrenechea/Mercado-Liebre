@@ -11,18 +11,21 @@ body {
 .main-header {
     background-color: #EAC926;
     padding: 20px;
-   /* position: fixed;
-    top: 0;
-   /* z-index: 10;*/
 }
 
 .barra{
+    display: flex;
+    border: #222222 solid;
     background: #ffffff;
-    width: 280px;
-    height: 15px;
-    justify-content: center;
+    position: absolute;
+    right: 40%;
+    top: 15%;
+    align-items: center;
     border: none;
 }
+
+.logo {
+    width: 200px;}
 
 .hamburger-button {
     background-color: black;
@@ -34,11 +37,6 @@ body {
     text-align: center;
     font-size: 20px;
     margin: auto;
-}
-
-.logo {
-    width: 200px;
-   /* animation: aumentar 1s linear infinite alternate;*/
 }
 
 .copy-header {
@@ -66,7 +64,6 @@ body {
 
 @media (min-width: 768px) {
     .main-header-top-bar {
-        /*border: dotted 2px red;*/
         display: flex;
         justify-content: space-between;
     }
@@ -78,7 +75,6 @@ body {
         display: none;
     }
     .main-header-botton-bar{
-        /*border: dotted 2px red;*/
         display: flex;
         justify-content: space-between;
     }
@@ -91,14 +87,6 @@ body {
 }
 
 /* estilos del main */
-/*
-@media (min-width: 768px) {
-    .contenedorProductos {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-}
-*/
 
 .contenedorProductos {
     background-color: gray;
@@ -107,19 +95,6 @@ body {
 
 .banner {
     width: 100%;
-}
-
-.precios {
-    font-size: 18px;
-}
-
-.descuento {
-    font-size: 16px;
-}
-
-.imgProducto {
-    width: 440px;
-    height: 200px;
 }
 
 .flex-container {
@@ -132,13 +107,13 @@ body {
     flex-wrap: wrap;
 }
 
-/*
-.flex-container div {
-    border: purple solid;
-    justify-content: space-around;
-    width: 100%;
-    
-} */
+.precios {
+    font-size: 18px;
+}
+
+.descuento {
+    font-size: 16px;
+}
 
 .flex-container img {
     width: 200px;
@@ -166,28 +141,7 @@ body {
 
 /* estilos del FOOTER */
 
-.footer-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    border: #39b54a solid;
-    position: absolute;
-}
-
-.itemfooter{
-    color: #1259c3;
-    align-items: center;
-    position: relative;
-}
-
-.div-footer {
-    justify-content: center;
-    width: 100%;
-}
-
-
-.footcontenedor{
+.foot-conteiner {
     display: flex;
     align-content: center;
     flex-direction: column;
@@ -195,23 +149,7 @@ body {
     padding: 10px;
 }
 
-.footcontenedor i {
-    color: #1259c3;
-    width: 20%;
-}
-
-
-
 .copyrigth {
     text-align: center;
 }
 
-
-.producto {
-    padding: 0 15px;
-    position: relative;
-}
-
-.producto img {
-    width: 70%;
-}
